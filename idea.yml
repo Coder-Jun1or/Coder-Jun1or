@@ -1,0 +1,24 @@
+name: Suggest something useful
+description: Share an everyday problem, a tool idea, or a creative experiment.
+title: "[Idea] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for bringing an idea to the lab! A useful idea can start with a small, everyday problem. No coding experience needed. English and Bahasa Indonesia are both welcome.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What would you like to make easier?
+      description: Tell me about the task, who it affects, and what makes it frustrating.
+      placeholder: I often need to…, but…
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What could help?
+      description: Share a possible solution or example, if you have one.
+      placeholder: A small tool that could…
+    validations:
+      required: false
